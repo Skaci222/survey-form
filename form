@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Survey Form</title>
+    </head>
+    <body>
+      <h1 id="title">Travel Survey Form</h1>
+      <p id="description">Tell us about your travel history</p>
+      <form id="survey-form">
+        <fieldset class="fieldset">
+        <label class="personal-info" id="name-label">Name<input  class="info" id="name" type="text" required placeholder="Name"/></label>
+        <label class="personal-info" id="email-label">Email<input class="info" id="email" type="email" required placeholder="Email"/></label>
+        <label class="personal-info" id="number-label">Age<input class="info" id="number" type="number" min="13" max="100" placeholder="Age"/></label>
+        </fieldset>
+        <fieldset>
+        <label class="personal-info">Favourite place to travel?
+        <select class="info" id="dropdown">
+          <option>
+            Select One
+            </option>
+            <option>
+              North America
+            </option>
+            <option>
+              South America
+            </option>
+            <option>
+              Asia
+            </option>
+            <option>
+              Africa
+              </option>
+              <option>
+                Australia
+                </option>
+          </select>
+          </label>
+          </fieldset>
+          <fieldset>
+            <label class="travelling"><input class="radio" type="radio" name="travelling" value="yes-travelling"/> I am travelling this year</label>
+            <label class="travelling"><input class="radio" type="radio" name="travelling" value="no-travelling"/> I am not travelling this year</label>
+            </fieldset>
+          <fieldset>
+            <label>
+              Which countries have you travelled to?
+              <label class="item-label"><input class="item" type="checkbox" value="china" />China</label>
+              <label class="item-label"><input class="item" type="checkbox" value="england"/>England</label>
+              <label class="item-label"><input class="item" type="checkbox" value="france"/>France</label>
+              <label class="item-label"><input class="item" type="checkbox" value="kenya"/>Kenya</label>
+              <label class="item-label"><input class="item" type="checkbox" value="egypt"/>Egypt</label>
+              <label class="item-label"><input class="item" type="checkbox" value="croatia"/>Croatia</label>
+              <label class="item-label"><input class="item" type="checkbox" value="korea"/>Korea</label>
+              </label>
+            </fieldset>
+            <fieldset>
+              <label>
+                Tell us about your most memorable travel experience
+              </label>
+              <textarea>
+                </textarea>
+              </fieldset>
+              <label>
+                <input id="submit" type="submit"/>
+                </label>
+        </form>
+      </body>
+  </html>
